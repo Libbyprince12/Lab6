@@ -3,6 +3,7 @@ title: "lab6"
 format: html
 ---
 loading the necessary libraries
+
 ```{r}
 install.packages("devtools")
 install.packages("tidyverse")
@@ -11,18 +12,16 @@ install.packages("glue")
 install.packages("vip")
 install.packages("baguette")
 ```
-data download
-```{r}
-root  <- 'https://gdex.ucar.edu/dataset/camels/file'
-```
-documentation pdf 
-```{r}
-download.file('https://gdex.ucar.edu/dataset/camels/file/camels_attributes_v2.0.pdf', 
-              'data/camels_attributes_v2.0.pdf')
-```
 
-basin characteristics
-```{r}
 
+```{r}
+devtools::install_github("Libbyprince12/Lab6")
+
+library(tidyverse)
+library(tidymodels)
+library(powerjoin)
+library(glue)
+library(vip)
+library(baguette)
 ```
 
