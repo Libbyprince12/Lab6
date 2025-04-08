@@ -1,7 +1,7 @@
 project:
-  title: "csu-ess-lab6
-  output-dir:docs
+  title: "csu-ess-lab6"
+  output-dir: docs
   type: website
 format:
   html:
-  self-contained:true
+    self-contained: true
