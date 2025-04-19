@@ -1162,8 +1162,7 @@ $ root_depth_99        &lt;dbl&gt; NA, 2.238444, NA, 2.400000, 2.340180, 2.23743
 <div class="cell-output cell-output-stderr">
 <pre><code>→ A | warning: ! There are new levels in `geol_2nd_class`: NA.
                ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
-                 `step_dummy()` to handle missing values., the standard deviation is zero, The correlation matrix has sporadic missing values. Some columns were excluded
-               from the filter.</code></pre>
+                 `step_dummy()` to handle missing values.</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>There were issues with some computations   A: x1</code></pre>
@@ -1175,64 +1174,92 @@ $ root_depth_99        &lt;dbl&gt; NA, 2.238444, NA, 2.400000, 2.340180, 2.23743
 </div>
 <div class="cell-output cell-output-stderr">
 <pre><code>There were issues with some computations   A: x1
-→ C | warning: ! There are new levels in `geol_2nd_class`: NA.
-               ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
-                 `step_dummy()` to handle missing values., ! There are new levels in `dom_land_cover`: " Barren or Sparsely Vegetated".
-               ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
-                 to handle unseen values., prediction from rank-deficient fit; consider predict(., rankdeficient="NA")
-There were issues with some computations   A: x1
-→ D | warning: ! There are new levels in `geol_1st_class`: "Pyroclastics".
+→ C | warning: ! There are new levels in `geol_1st_class`: "Intermediate plutonic rocks".
                ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
                  to handle unseen values., ! There are new levels in `geol_2nd_class`: NA.
                ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
                  `step_dummy()` to handle missing values., prediction from rank-deficient fit; consider predict(., rankdeficient="NA")
 There were issues with some computations   A: x1
-There were issues with some computations   A: x10   B: x8   C: x1   D: x1
+→ D | warning: ! There are new levels in `geol_2nd_class`: NA.
+               ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
+                 `step_dummy()` to handle missing values., ! There are new levels in `dom_land_cover`: " Barren or Sparsely Vegetated".
+               ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
+                 to handle unseen values., prediction from rank-deficient fit; consider predict(., rankdeficient="NA")
+There were issues with some computations   A: x1
+→ E | warning: ! There are new levels in `geol_2nd_class`: NA and "Pyroclastics".
+               ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
+                 `step_dummy()` to handle missing values.
+               ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
+                 to handle unseen values., prediction from rank-deficient fit; consider predict(., rankdeficient="NA")
+There were issues with some computations   A: x1
+→ F | warning: ! There are new levels in `geol_1st_class`: "Basic plutonic rocks".
+               ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
+                 to handle unseen values., ! There are new levels in `geol_2nd_class`: NA.
+               ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
+                 `step_dummy()` to handle missing values., prediction from rank-deficient fit; consider predict(., rankdeficient="NA")
+There were issues with some computations   A: x1
+There were issues with some computations   A: x10   B: x6   C: x1   D: x1   E: …
 
 → A | warning: ! There are new levels in `geol_2nd_class`: NA.
                ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
-                 `step_dummy()` to handle missing values., the standard deviation is zero, The correlation matrix has sporadic missing values. Some columns were excluded
-               from the filter.
-→ B | warning: ! There are new levels in `geol_2nd_class`: NA.
+                 `step_dummy()` to handle missing values.
+There were issues with some computations   A: x1
+→ B | warning: ! There are new levels in `geol_1st_class`: "Intermediate plutonic rocks".
+               ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
+                 to handle unseen values., ! There are new levels in `geol_2nd_class`: NA.
                ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
                  `step_dummy()` to handle missing values.
-There were issues with some computations   A: x1   B: x1
+There were issues with some computations   A: x1
 → C | warning: ! There are new levels in `geol_2nd_class`: NA.
                ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
                  `step_dummy()` to handle missing values., ! There are new levels in `dom_land_cover`: " Barren or Sparsely Vegetated".
                ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
                  to handle unseen values.
-There were issues with some computations   A: x1   B: x1
-→ D | warning: ! There are new levels in `geol_1st_class`: "Pyroclastics".
+There were issues with some computations   A: x1
+→ D | warning: ! There are new levels in `geol_2nd_class`: NA and "Pyroclastics".
+               ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
+                 `step_dummy()` to handle missing values.
+               ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
+                 to handle unseen values.
+There were issues with some computations   A: x1
+→ E | warning: ! There are new levels in `geol_1st_class`: "Basic plutonic rocks".
                ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
                  to handle unseen values., ! There are new levels in `geol_2nd_class`: NA.
                ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
                  `step_dummy()` to handle missing values.
-There were issues with some computations   A: x1   B: x1
-There were issues with some computations   A: x10   B: x8   C: x1   D: x1
+There were issues with some computations   A: x1
+There were issues with some computations   A: x16   B: x1   C: x1   D: x1   E: …
 
 → A | warning: ! There are new levels in `geol_2nd_class`: NA.
                ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
-                 `step_dummy()` to handle missing values., the standard deviation is zero, The correlation matrix has sporadic missing values. Some columns were excluded
-               from the filter.
-→ B | warning: ! There are new levels in `geol_2nd_class`: NA.
+                 `step_dummy()` to handle missing values.
+There were issues with some computations   A: x1
+→ B | warning: ! There are new levels in `geol_1st_class`: "Intermediate plutonic rocks".
+               ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
+                 to handle unseen values., ! There are new levels in `geol_2nd_class`: NA.
                ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
                  `step_dummy()` to handle missing values.
-There were issues with some computations   A: x1   B: x1
+There were issues with some computations   A: x1
 → C | warning: ! There are new levels in `geol_2nd_class`: NA.
                ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
                  `step_dummy()` to handle missing values., ! There are new levels in `dom_land_cover`: " Barren or Sparsely Vegetated".
                ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
                  to handle unseen values.
-There were issues with some computations   A: x1   B: x1
-There were issues with some computations   A: x6   B: x5   C: x1
-→ D | warning: ! There are new levels in `geol_1st_class`: "Pyroclastics".
+There were issues with some computations   A: x1
+→ D | warning: ! There are new levels in `geol_2nd_class`: NA and "Pyroclastics".
+               ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
+                 `step_dummy()` to handle missing values.
+               ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
+                 to handle unseen values.
+There were issues with some computations   A: x1
+There were issues with some computations   A: x9   B: x1   C: x1   D: x1
+→ E | warning: ! There are new levels in `geol_1st_class`: "Basic plutonic rocks".
                ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
                  to handle unseen values., ! There are new levels in `geol_2nd_class`: NA.
                ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
                  `step_dummy()` to handle missing values.
-There were issues with some computations   A: x6   B: x5   C: x1
-There were issues with some computations   A: x10   B: x8   C: x1   D: x1</code></pre>
+There were issues with some computations   A: x9   B: x1   C: x1   D: x1
+There were issues with some computations   A: x16   B: x1   C: x1   D: x1   E: …</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">autoplot</span>(wf_results)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -1249,17 +1276,17 @@ There were issues with some computations   A: x10   B: x8   C: x1   D: x1</code>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">collect_metrics</span>(wf_results)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 9 × 9
-  wflow_id   .config        preproc model .metric .estimator  mean     n std_err
-  &lt;chr&gt;      &lt;chr&gt;          &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt;
-1 recipe_lm  Preprocessor1… recipe  line… mae     standard   0.121    10 0.00579
-2 recipe_lm  Preprocessor1… recipe  line… rmse    standard   0.177    10 0.0149 
-3 recipe_lm  Preprocessor1… recipe  line… rsq     standard   0.984    10 0.00731
-4 recipe_rf  Preprocessor1… recipe  rand… mae     standard   0.217    10 0.0126 
-5 recipe_rf  Preprocessor1… recipe  rand… rmse    standard   0.369    10 0.0368 
-6 recipe_rf  Preprocessor1… recipe  rand… rsq     standard   0.960    10 0.00579
-7 recipe_xgb Preprocessor1… recipe  boos… mae     standard   0.107    10 0.00858
-8 recipe_xgb Preprocessor1… recipe  boos… rmse    standard   0.210    10 0.0220 
-9 recipe_xgb Preprocessor1… recipe  boos… rsq     standard   0.983    10 0.00209</code></pre>
+  wflow_id   .config       preproc model .metric .estimator   mean     n std_err
+  &lt;chr&gt;      &lt;chr&gt;         &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;       &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt;
+1 recipe_lm  Preprocessor… recipe  line… mae     standard   0.126     10 0.00469
+2 recipe_lm  Preprocessor… recipe  line… rmse    standard   0.187     10 0.0119 
+3 recipe_lm  Preprocessor… recipe  line… rsq     standard   0.986     10 0.00460
+4 recipe_rf  Preprocessor… recipe  rand… mae     standard   0.215     10 0.0145 
+5 recipe_rf  Preprocessor… recipe  rand… rmse    standard   0.376     10 0.0402 
+6 recipe_rf  Preprocessor… recipe  rand… rsq     standard   0.957     10 0.00656
+7 recipe_xgb Preprocessor… recipe  boos… mae     standard   0.0966    10 0.00899
+8 recipe_xgb Preprocessor… recipe  boos… rmse    standard   0.195     10 0.0281 
+9 recipe_xgb Preprocessor… recipe  boos… rsq     standard   0.983     10 0.00303</code></pre>
 </div>
 </div>
 <p>The best model was the XGBoost because it had the lowest mean absolute error of 0.1075, a low RMSE f 0.211, and a high R^2 of 0.983. These results show that the model makes accurate predictions with small errors.</p>
@@ -1312,178 +1339,172 @@ There were issues with some computations   A: x10   B: x8   C: x1   D: x1</code>
 <pre><code>There were issues with some computations   A: x1</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x7</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x11</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x15</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x19</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x21</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x25</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x26</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x33</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x37</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x41</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x44</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x47</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x50</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x52</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>→ B | warning: ! There are new levels in `geol_1st_class`: "Pyroclastics".
+<pre><code>→ B | warning: ! There are new levels in `geol_1st_class`: "Basic plutonic rocks".
                ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
-                 to handle unseen values., ! There are new levels in `geol_2nd_class`: NA.
+                 to handle unseen values., ! There are new levels in `geol_2nd_class`: NA and "Pyroclastics".
                ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
-                 `step_dummy()` to handle missing values., ! There are new levels in `dom_land_cover`: " Barren or Sparsely Vegetated".
+                 `step_dummy()` to handle missing values.
                ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
                  to handle unseen values.</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>There were issues with some computations   A: x52
-There were issues with some computations   A: x53   B: x5
-There were issues with some computations   A: x53   B: x9
-There were issues with some computations   A: x53   B: x13
-There were issues with some computations   A: x53   B: x15
-There were issues with some computations   A: x53   B: x19
-There were issues with some computations   A: x53   B: x22
-There were issues with some computations   A: x53   B: x24
-There were issues with some computations   A: x56   B: x25
-There were issues with some computations   A: x61   B: x25
+<pre><code>There were issues with some computations   A: x1
+There were issues with some computations   A: x1   B: x5
+There were issues with some computations   A: x1   B: x9
+There were issues with some computations   A: x1   B: x13
+There were issues with some computations   A: x1   B: x16
+There were issues with some computations   A: x1   B: x19
+There were issues with some computations   A: x1   B: x22
+There were issues with some computations   A: x1   B: x24
+There were issues with some computations   A: x5   B: x25
+There were issues with some computations   A: x9   B: x25
+There were issues with some computations   A: x12   B: x25
+There were issues with some computations   A: x16   B: x25
+There were issues with some computations   A: x19   B: x25
+There were issues with some computations   A: x22   B: x25
+There were issues with some computations   A: x24   B: x25
+There were issues with some computations   A: x27   B: x25
+There were issues with some computations   A: x31   B: x25
+There were issues with some computations   A: x36   B: x25
+There were issues with some computations   A: x39   B: x25
+There were issues with some computations   A: x43   B: x25
+There were issues with some computations   A: x46   B: x25
+There were issues with some computations   A: x48   B: x25
+There were issues with some computations   A: x52   B: x25
+There were issues with some computations   A: x53   B: x25
+There were issues with some computations   A: x59   B: x25
 There were issues with some computations   A: x64   B: x25
-There were issues with some computations   A: x68   B: x25
-There were issues with some computations   A: x71   B: x25
-There were issues with some computations   A: x73   B: x25
-There were issues with some computations   A: x76   B: x25
+There were issues with some computations   A: x67   B: x25
+There were issues with some computations   A: x69   B: x25
+There were issues with some computations   A: x72   B: x25
+There were issues with some computations   A: x74   B: x25
+There were issues with some computations   A: x77   B: x25
 There were issues with some computations   A: x79   B: x25
-There were issues with some computations   A: x82   B: x25
-There were issues with some computations   A: x87   B: x25
-There were issues with some computations   A: x90   B: x25
-There were issues with some computations   A: x94   B: x25
-There were issues with some computations   A: x97   B: x25
-There were issues with some computations   A: x100   B: x25
-There were issues with some computations   A: x103   B: x25
-There were issues with some computations   A: x105   B: x25
-There were issues with some computations   A: x111   B: x25
-There were issues with some computations   A: x115   B: x25
-There were issues with some computations   A: x120   B: x25
-There were issues with some computations   A: x123   B: x25
-There were issues with some computations   A: x126   B: x25
-There were issues with some computations   A: x129   B: x25
-There were issues with some computations   A: x131   B: x25
-There were issues with some computations   A: x136   B: x25
-There were issues with some computations   A: x141   B: x25
-There were issues with some computations   A: x144   B: x25
-There were issues with some computations   A: x147   B: x25
-There were issues with some computations   A: x151   B: x25
-There were issues with some computations   A: x154   B: x25
-There were issues with some computations   A: x156   B: x25
-There were issues with some computations   A: x161   B: x25
-There were issues with some computations   A: x166   B: x25
-There were issues with some computations   A: x170   B: x25
-There were issues with some computations   A: x173   B: x25
-There were issues with some computations   A: x177   B: x25
-There were issues with some computations   A: x180   B: x25
-There were issues with some computations   A: x182   B: x25
-There were issues with some computations   A: x186   B: x25
-There were issues with some computations   A: x191   B: x25
-There were issues with some computations   A: x194   B: x25
-There were issues with some computations   A: x198   B: x25
-There were issues with some computations   A: x201   B: x25
-There were issues with some computations   A: x204   B: x25
-There were issues with some computations   A: x207   B: x25
-There were issues with some computations   A: x209   B: x25
-There were issues with some computations   A: x215   B: x25
-There were issues with some computations   A: x219   B: x25
-There were issues with some computations   A: x223   B: x25
-There were issues with some computations   A: x226   B: x25
-There were issues with some computations   A: x230   B: x25
-There were issues with some computations   A: x233   B: x25
-There were issues with some computations   A: x235   B: x25
-There were issues with some computations   A: x235   B: x25</code></pre>
+→ C | warning: ! There are new levels in `geol_1st_class`: "Intermediate plutonic rocks".
+               ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
+                 to handle unseen values., ! There are new levels in `geol_2nd_class`: NA.
+               ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
+                 `step_dummy()` to handle missing values.
+There were issues with some computations   A: x79   B: x25
+There were issues with some computations   A: x80   B: x25   C: x3
+There were issues with some computations   A: x80   B: x25   C: x8
+There were issues with some computations   A: x80   B: x25   C: x12
+There were issues with some computations   A: x80   B: x25   C: x14
+There were issues with some computations   A: x80   B: x25   C: x18
+There were issues with some computations   A: x80   B: x25   C: x20
+There were issues with some computations   A: x80   B: x25   C: x23
+There were issues with some computations   A: x80   B: x25   C: x24
+There were issues with some computations   A: x82   B: x25   C: x25
+There were issues with some computations   A: x86   B: x25   C: x25
+There were issues with some computations   A: x91   B: x25   C: x25
+There were issues with some computations   A: x95   B: x25   C: x25
+There were issues with some computations   A: x98   B: x25   C: x25
+There were issues with some computations   A: x101   B: x25   C: x25
+There were issues with some computations   A: x103   B: x25   C: x25
+There were issues with some computations   A: x106   B: x25   C: x25
+→ D | warning: ! There are new levels in `geol_2nd_class`: NA.
+               ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
+                 `step_dummy()` to handle missing values., ! There are new levels in `dom_land_cover`: " Barren or Sparsely Vegetated".
+               ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
+                 to handle unseen values.
+There were issues with some computations   A: x106   B: x25   C: x25
+There were issues with some computations   A: x107   B: x25   C: x25   D: x4
+There were issues with some computations   A: x107   B: x25   C: x25   D: x9
+There were issues with some computations   A: x107   B: x25   C: x25   D: x12
+There were issues with some computations   A: x107   B: x25   C: x25   D: x15
+There were issues with some computations   A: x107   B: x25   C: x25   D: x18
+There were issues with some computations   A: x107   B: x25   C: x25   D: x20
+There were issues with some computations   A: x107   B: x25   C: x25   D: x24
+→ E | warning: ! There are new levels in `geol_1st_class`: "Intermediate volcanic rocks".
+               ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
+                 to handle unseen values., ! There are new levels in `geol_2nd_class`: NA.
+               ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
+                 `step_dummy()` to handle missing values.
+There were issues with some computations   A: x107   B: x25   C: x25   D: x24
+There were issues with some computations   A: x108   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x108   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x108   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x108   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x108   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x108   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x108   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x108   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x113   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x117   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x121   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x124   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x128   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x129   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x133   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x136   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x141   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x145   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x149   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x152   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x154   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x158   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x160   B: x25   C: x25   D: x25  …
+There were issues with some computations   A: x160   B: x25   C: x25   D: x25  …</code></pre>
 </div>
 </div>
 <p>Check the skill of the tuned mode: Collect Metrics/Show Best/Describe in Plain Language</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">show_best</span>(xgb_res, <span class="at">metric =</span> <span class="st">"mae"</span>, <span class="at">n =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">show_best</span>(xgb_res, <span class="at">metric =</span> <span class="st">"mae"</span>, <span class="at">n =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 8
-   mtry min_n .metric .estimator  mean     n std_err .config              
-  &lt;int&gt; &lt;int&gt; &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                
-1    50    11 mae     standard   0.103    10 0.00898 Preprocessor1_Model10
-2    38     2 mae     standard   0.109    10 0.00791 Preprocessor1_Model04
-3    38    11 mae     standard   0.110    10 0.00929 Preprocessor1_Model09
-4    50     2 mae     standard   0.111    10 0.00754 Preprocessor1_Model05
-5    26    11 mae     standard   0.119    10 0.00755 Preprocessor1_Model08</code></pre>
+   mtry min_n .metric .estimator   mean     n std_err .config              
+  &lt;int&gt; &lt;int&gt; &lt;chr&gt;   &lt;chr&gt;       &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt; &lt;chr&gt;                
+1    50    11 mae     standard   0.0967    10 0.00713 Preprocessor1_Model10
+2    38     2 mae     standard   0.102     10 0.00751 Preprocessor1_Model04
+3    50     2 mae     standard   0.106     10 0.00873 Preprocessor1_Model05
+4    38    11 mae     standard   0.106     10 0.00699 Preprocessor1_Model09
+5    26     2 mae     standard   0.107     10 0.0105  Preprocessor1_Model03</code></pre>
 </div>
 </div>
 <p>The mtry and min_n combinations that resulted in the MAE were mtry=50 and min_n=11. This was the best performance with the smallest average error and lowest standard error, showing consistent results.</p>
 <p>Finalize your mode: Finalize Workflow</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>best_params <span class="ot">&lt;-</span> <span class="fu">select_best</span>(xgb_res, <span class="at">metric =</span> <span class="st">"mae"</span>)</span>
-<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>final_xgb_workflow <span class="ot">&lt;-</span> <span class="fu">finalize_workflow</span>(</span>
-<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>  xgb_workflow,</span>
-<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>  best_params</span>
-<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>best_params <span class="ot">&lt;-</span> <span class="fu">select_best</span>(xgb_res, <span class="at">metric =</span> <span class="st">"mae"</span>)</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>final_xgb_workflow <span class="ot">&lt;-</span> <span class="fu">finalize_workflow</span>(</span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  xgb_workflow,</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>  best_params</span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Final Model Verification: Implement the last fit</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>last_xgb_fit <span class="ot">&lt;-</span> <span class="fu">last_fit</span>(final_xgb_workflow, split)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>last_xgb_fit <span class="ot">&lt;-</span> <span class="fu">last_fit</span>(final_xgb_workflow, split)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>→ A | warning: ! There are new levels in `geol_2nd_class`: NA.
                ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
                  `step_dummy()` to handle missing values.</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>→ B | warning: ! There are new levels in `geol_1st_class`: "Basic plutonic rocks".
-               ℹ Consider using step_novel() (`?recipes::step_novel()`) before `step_dummy()`
-                 to handle unseen values., ! There are new levels in `geol_2nd_class`: NA.
-               ℹ Consider using step_unknown() (`?recipes::step_unknown()`) before
-                 `step_dummy()` to handle missing values.</code></pre>
+<pre><code>There were issues with some computations   A: x2
+There were issues with some computations   A: x2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code></code></pre>
 </div>
 </div>
 <p>Interpret Metrics</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">collect_metrics</span>(last_xgb_fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">collect_metrics</span>(last_xgb_fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 2 × 4
   .metric .estimator .estimate .config             
   &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               
-1 rmse    standard       0.254 Preprocessor1_Model1
-2 rsq     standard       0.978 Preprocessor1_Model1</code></pre>
+1 rmse    standard       0.258 Preprocessor1_Model1
+2 rsq     standard       0.979 Preprocessor1_Model1</code></pre>
 </div>
 </div>
 <p>Plot Predictions</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">collect_predictions</span>(last_xgb_fit) <span class="sc">%&gt;%</span></span>
-<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> .pred, <span class="at">y =</span> q_mean)) <span class="sc">+</span></span>
-<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.4</span>) <span class="sc">+</span></span>
-<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="at">slope =</span> <span class="dv">1</span>, <span class="at">intercept =</span> <span class="dv">0</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
-<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Predicted vs Observed Q_mean"</span>, <span class="at">x =</span> <span class="st">"Predicted"</span>, <span class="at">y =</span> <span class="st">"Observed"</span>) <span class="sc">+</span></span>
-<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">collect_predictions</span>(last_xgb_fit) <span class="sc">%&gt;%</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> .pred, <span class="at">y =</span> q_mean)) <span class="sc">+</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.4</span>) <span class="sc">+</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_abline</span>(<span class="at">slope =</span> <span class="dv">1</span>, <span class="at">intercept =</span> <span class="dv">0</span>, <span class="at">color =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Predicted vs Observed Q_mean"</span>, <span class="at">x =</span> <span class="st">"Predicted"</span>, <span class="at">y =</span> <span class="st">"Observed"</span>) <span class="sc">+</span></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1494,16 +1515,16 @@ There were issues with some computations   A: x235   B: x25</code></pre>
 </div>
 <p>Final Figure: Augment Data &amp; Calculate Residuals</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>final_aug <span class="ot">&lt;-</span> <span class="fu">augment</span>(last_xgb_fit)</span>
-<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>final_aug <span class="ot">&lt;-</span> final_aug <span class="sc">%&gt;%</span></span>
-<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">residual =</span> q_mean <span class="sc">-</span> .pred)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>final_aug <span class="ot">&lt;-</span> <span class="fu">augment</span>(last_xgb_fit)</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>final_aug <span class="ot">&lt;-</span> final_aug <span class="sc">%&gt;%</span></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">residual =</span> q_mean <span class="sc">-</span> .pred)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Map Predicted Q and Residuals 15</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(final_aug, <span class="fu">aes</span>(<span class="at">x =</span> gauge_lon, <span class="at">y =</span> gauge_lat, <span class="at">color =</span> .pred)) <span class="sc">+</span></span>
-<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Predicted Q_mean across Locations"</span>, <span class="at">color =</span> <span class="st">"Predicted Q"</span>) <span class="sc">+</span></span>
-<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(final_aug, <span class="fu">aes</span>(<span class="at">x =</span> gauge_lon, <span class="at">y =</span> gauge_lat, <span class="at">color =</span> .pred)) <span class="sc">+</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Predicted Q_mean across Locations"</span>, <span class="at">color =</span> <span class="st">"Predicted Q"</span>) <span class="sc">+</span></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1511,11 +1532,11 @@ There were issues with some computations   A: x235   B: x25</code></pre>
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(final_aug, <span class="fu">aes</span>(<span class="at">x =</span> gauge_lon, <span class="at">y =</span> gauge_lat, <span class="at">color =</span> residual)) <span class="sc">+</span></span>
-<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_gradient2</span>(<span class="at">low =</span> <span class="st">"blue"</span>, <span class="at">high =</span> <span class="st">"red"</span>, <span class="at">mid =</span> <span class="st">"white"</span>, <span class="at">midpoint =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
-<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Residuals across Locations"</span>, <span class="at">color =</span> <span class="st">"Residual"</span>) <span class="sc">+</span></span>
-<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(final_aug, <span class="fu">aes</span>(<span class="at">x =</span> gauge_lon, <span class="at">y =</span> gauge_lat, <span class="at">color =</span> residual)) <span class="sc">+</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_gradient2</span>(<span class="at">low =</span> <span class="st">"blue"</span>, <span class="at">high =</span> <span class="st">"red"</span>, <span class="at">mid =</span> <span class="st">"white"</span>, <span class="at">midpoint =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Residuals across Locations"</span>, <span class="at">color =</span> <span class="st">"Residual"</span>) <span class="sc">+</span></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
